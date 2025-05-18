@@ -1,11 +1,24 @@
 version: 2
 enable-beta-ecosystems: true
 updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "daily"
+
   - package-ecosystem: "pub"
-    directory: "/"
+    directory: "/super_simple_authentication_server/packages/shared_objects"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+
+  - package-ecosystem: "pub"
+    directory: "/super_simple_authentication_client"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "pub"
+    directory: "/super_simple_authentication_flutter"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "pub"
+    directory: "/super_simple_authentication_server"
+    schedule:
+      interval: "weekly"
+
